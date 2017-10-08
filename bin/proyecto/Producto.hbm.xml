@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-ene-2017 12:02:12 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="proyecto.Producto" table="producto" catalog="proyectoaed">
+        <id name="codP" type="short">
+            <column name="CodP" precision="3" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="categoria" class="proyecto.Categoria" fetch="select">
+            <column name="CodC" precision="3" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="nombreP" type="string">
+            <column name="NombreP" length="50" />
+        </property>
+        <property name="tamano" type="java.lang.Short">
+            <column name="Tamano" precision="4" scale="0" />
+        </property>
+        <property name="dos" type="string">
+            <column name="Dos" length="2" />
+        </property>
+    </class>
+</hibernate-mapping>
