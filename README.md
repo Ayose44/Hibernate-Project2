@@ -11,3 +11,4 @@ they will be created automatically. Then is divided by some methods depending of
   - "Modificar": it allows you modify the products and categories that are on the database.
   - "Borrar": deletes a product or category that you choose from the database.
   
+*The app will not work depending of the database and hibernate configuration files link (add the library on eclipse..etc.), but the code is correct and works good   
